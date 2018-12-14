@@ -1,0 +1,6 @@
+C:\Users\Boris\source\repos\ProyectoCiisaIframe\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\Boris\source\repos\ProyectoCiisaIframe\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\Boris\source\repos\ProyectoCiisaIframe\ClassLibrary1\obj\Debug\Biblioteca.csprojAssemblyReference.cache
+C:\Users\Boris\source\repos\ProyectoCiisaIframe\ClassLibrary1\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Boris\source\repos\ProyectoCiisaIframe\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\Boris\source\repos\ProyectoCiisaIframe\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
