@@ -15,8 +15,9 @@ namespace Biblioteca
         {
             try
             {
-                string cadena = @"Data Source=PC-BORIS\SQLSERVER;Initial Catalog=CiisaTech;Integrated Security=True";
-                SqlConnection cnn = new SqlConnection(cadena);
+                string sqlServer1 = @"Data Source=PC-BORIS\SQLSERVER;Initial Catalog=CiisaTech;Integrated Security=True";
+                string sqlServer2 = @"Data Source=DESKTOP-D2JGCDB\MSSQLSERVER1;Initial Catalog=CiisaTech;Integrated Security=True";
+                SqlConnection cnn = new SqlConnection(sqlServer2);
                 cnn.Open();
                 return cnn;
             }

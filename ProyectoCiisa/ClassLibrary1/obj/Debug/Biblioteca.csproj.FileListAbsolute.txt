@@ -10,3 +10,9 @@ F:\Proyectos Visual Studio\ciisa-asp\ProyectoCiisa\ClassLibrary1\bin\Debug\Bibli
 F:\Proyectos Visual Studio\ciisa-asp\ProyectoCiisa\ClassLibrary1\bin\Debug\Biblioteca.pdb
 F:\Proyectos Visual Studio\ciisa-asp\ProyectoCiisa\ClassLibrary1\obj\Debug\Biblioteca.dll
 F:\Proyectos Visual Studio\ciisa-asp\ProyectoCiisa\ClassLibrary1\obj\Debug\Biblioteca.pdb
+C:\Users\Boris Belmar\Documents\Proyectos\ciisa-asp\ProyectoCiisa\ClassLibrary1\bin\Debug\Biblioteca.dll
+C:\Users\Boris Belmar\Documents\Proyectos\ciisa-asp\ProyectoCiisa\ClassLibrary1\bin\Debug\Biblioteca.pdb
+C:\Users\Boris Belmar\Documents\Proyectos\ciisa-asp\ProyectoCiisa\ClassLibrary1\obj\Debug\Biblioteca.csprojAssemblyReference.cache
+C:\Users\Boris Belmar\Documents\Proyectos\ciisa-asp\ProyectoCiisa\ClassLibrary1\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Boris Belmar\Documents\Proyectos\ciisa-asp\ProyectoCiisa\ClassLibrary1\obj\Debug\Biblioteca.dll
+C:\Users\Boris Belmar\Documents\Proyectos\ciisa-asp\ProyectoCiisa\ClassLibrary1\obj\Debug\Biblioteca.pdb

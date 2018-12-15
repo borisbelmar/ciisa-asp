@@ -133,21 +133,28 @@ namespace ProyectoCiisa
             Operacion op = new Operacion();
             if (txtID.Text != "")
             {
-                int id = Convert.ToInt32(txtID.Text);
-                Articulo articulo = Operacion.ConsultarArticulo(id);
-                if (articulo != null)
+                try
                 {
-                    txtID.Text = articulo.StrID;
-                    txtNombreArticulo.Text = articulo.StrNombre;
-                    txtDescripcion.Text = articulo.StrDescripcion;
-                    txtFicha.Text = articulo.StrFichaTecnica;
-                    txtFecha.Text = articulo.StrFecha;
-                    txtValor.Text = articulo.StrValor;
-                    imagePreview.ImageUrl = articulo.StrImagen;
+                    int id = Convert.ToInt32(txtID.Text);
+                    Articulo articulo = Operacion.ConsultarArticulo(id);
+                    if (articulo != null)
+                    {
+                        txtID.Text = articulo.StrID;
+                        txtNombreArticulo.Text = articulo.StrNombre;
+                        txtDescripcion.Text = articulo.StrDescripcion;
+                        txtFicha.Text = articulo.StrFichaTecnica;
+                        txtFecha.Text = articulo.StrFecha;
+                        txtValor.Text = articulo.StrValor;
+                        imagePreview.ImageUrl = articulo.StrImagen;
+                    }
+                    else
+                    {
+                        Response.Write("<script>window.alert('Falló la consulta')</script>");
+                    }
                 }
-                else
+                catch(Exception)
                 {
-                    Response.Write("<script>window.alert('Falló la consulta')</script>");
+                    Response.Write("<script>window.alert('La ID ingresada no es un número válido')</script>");
                 }
             }
             else

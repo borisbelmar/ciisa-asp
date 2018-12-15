@@ -38,22 +38,16 @@
         <div class="formulario consultas">
             <h3>Ingreso de Articulos</h3>
             <asp:TextBox ID="txtID" runat="server" placeholder="ID"></asp:TextBox>
-            <%-- <asp:RequiredFieldValidator CssClass="error-validar" ID="validadorID" runat="server" ErrorMessage="Porfavor ingrese ID" ControlToValidate="txtID"></asp:RequiredFieldValidator> --%>
 
             <asp:TextBox ID="txtNombreArticulo" runat="server" placeholder="Nombre del Artículo"></asp:TextBox>
-            <%-- <asp:RequiredFieldValidator CssClass="error-validar" ID="validadorNombreArticulo" runat="server" ErrorMessage="Porfavor ingrese Nombre de Artículo" ControlToValidate="txtNombreArticulo"></asp:RequiredFieldValidator> --%>
         
             <asp:TextBox ID="txtDescripcion" runat="server" placeholder="Descripción del artículo"></asp:TextBox>
-            <%-- <asp:RequiredFieldValidator CssClass="error-validar" ID="validadorDescripcion"  runat="server" ErrorMessage="Porfavor ingrese Descripción" ControlToValidate="txtDescripcion"></asp:RequiredFieldValidator> --%>
 
             <asp:TextBox ID="txtFicha" runat="server" placeholder="Ficha del artículo"></asp:TextBox>
-            <%-- <asp:RequiredFieldValidator CssClass="error-validar" ID="validadorFicha"  runat="server" ErrorMessage="Porfavor ingrese Ficha" ControlToValidate="txtFicha"></asp:RequiredFieldValidator> --%>
 
             <asp:TextBox ID="txtValor" runat="server" placeholder="Valor del artículo"></asp:TextBox>
-            <%-- <asp:RequiredFieldValidator CssClass="error-validar" ID="validadorValor"  runat="server" ErrorMessage="Porfavor ingrese Valor" ControlToValidate="txtValor"></asp:RequiredFieldValidator> --%>
 
             <asp:TextBox ID="txtFecha" runat="server" placeholder="Fecha de creación"></asp:TextBox>
-            <%-- <asp:RequiredFieldValidator CssClass="error-validar" ID="validadorFecha"  runat="server" ErrorMessage="Porfavor ingrese Fecha" ControlToValidate="txtFecha"></asp:RequiredFieldValidator> --%>
 
             <div class="upload-form">
                 <asp:Image ID="imagePreview" CssClass="imagen" runat="server" ImageUrl="~/img/upload-placeholder.png" />

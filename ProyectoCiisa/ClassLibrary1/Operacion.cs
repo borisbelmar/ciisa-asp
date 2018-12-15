@@ -156,7 +156,7 @@ namespace Biblioteca
             Conexion cn = new Conexion();
             try
             {
-                string sql = "DELETE FROM Articulos WHERE vendedores_ID = '" + id + "'";
+                string sql = "DELETE FROM Articulos WHERE articulos_ID = '" + id + "'";
                 SqlCommand cmd = new SqlCommand(sql, cn.getConexion());
                 int n = cmd.ExecuteNonQuery();
                 return n > 0;
