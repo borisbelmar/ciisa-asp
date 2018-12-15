@@ -105,6 +105,10 @@ input[type=text], input[type=password] {
     transition: 350ms;
 }
 
+.consultas input[type=text], .consultas input[type=password] {
+    margin-bottom: 1.5em;
+}
+
 input[type=text]:focus, input[type=password]:focus {
     box-shadow: inset 0px 0px 10px rgba(27, 176, 92, 0.5);
 }
@@ -132,6 +136,23 @@ input[type=submit]:hover, .button:hover {
     background-color: #F3A000;
     text-decoration: none !important;
     color:  !important;
+}
+
+input[type=file] {
+    color: white;
+    font-weight: 700;
+    margin: 2em auto auto auto;
+}
+
+.upload-form {
+    margin: 1.5em auto 3em auto;
+    text-align: center;
+}
+
+.imagen {
+    width: 100%;
+    max-width: 280px;
+    padding: 0 1.5em 0 1.5em;
 }
 
 .button:active, .button:hover, .button:current, .button:visited, .button:focus {
@@ -172,6 +193,16 @@ iframe {
     background-color: #1BB05C;
     text-align: left;
 }
+
+.actualizar {
+    background-color: #3498db !important;
+}
+
+.eliminar {
+    background-color: #e74c3c !important;
+}
+
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {

@@ -13,7 +13,7 @@ CREATE TABLE Articulos (
 	articulos_ficha varchar(max),
 	articulos_valor varchar(50) not null,
 	articulos_fecha varchar(50) not null,
-	articulos_foto image not null,
+	articulos_foto varchar(max),
 );
 
 CREATE TABLE Vendedores (

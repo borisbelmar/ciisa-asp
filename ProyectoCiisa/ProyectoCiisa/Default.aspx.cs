@@ -4,16 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Biblioteca;
 
 namespace ProyectoCiisa
 {
     public partial class _Default : Page
     {
-
-        String strNombreUsuario = null;
-        String strPasswordUsuario = null;
-
-        
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -22,10 +18,20 @@ namespace ProyectoCiisa
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            this.strNombreUsuario = this.txtUsuario.Text;
-            this.strPasswordUsuario = this.txtPassword.Text;
-            //Response.Write("Bienvenido " + strNombreUsuario + ". Ingresaste con la contraseña: " + strPasswordUsuario);
-            Response.Redirect("Datos.aspx");
+            Operacion op = new Operacion();
+            string usuario, password;
+            usuario = txtUsuario.Text;
+            password = txtPassword.Text;
+            if (op.login(usuario, password))
+            {
+                Response.Redirect("Datos.aspx");
+            }
+            else
+            {
+                Response.Write("<script>window.alert('Datos Incorrectos')</script>");
+                txtUsuario.Text = "";
+                txtPassword.Text = "";
+            }
         }
     }
 }

@@ -35,21 +35,28 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-        <div class="formulario">
-            <h3>Ingreso de vendedores</h3>
+        <div class="formulario consultas">
+            <h3>Ingreso de Vendedores</h3>
+
+            <asp:TextBox ID="txtID" runat="server" placeholder="ID"></asp:TextBox>
+            <%-- <asp:RequiredFieldValidator CssClass="error-validar" ID="validadorID" runat="server" ErrorMessage="Porfavor ingrese ID" ControlToValidate="txtID"></asp:RequiredFieldValidator> --%>
+
             <asp:TextBox ID="txtUsuario" runat="server" placeholder="Usuario"></asp:TextBox>
-            <asp:RequiredFieldValidator CssClass="error-validar" ID="validadorUsuario" runat="server" ErrorMessage="Porfavor ingrese Usuario" ControlToValidate="txtUsuario"></asp:RequiredFieldValidator>
+            <%-- <asp:RequiredFieldValidator CssClass="error-validar" ID="validadorUsuario" runat="server" ErrorMessage="Porfavor ingrese Usuario" ControlToValidate="txtUsuario"></asp:RequiredFieldValidator> --%>
         
-            <asp:TextBox ID="txtPassword" runat="server" placeholder="Contraseña" TextMode="Password"></asp:TextBox>
-            <asp:RequiredFieldValidator CssClass="error-validar" ID="validadorPassword"  runat="server" ErrorMessage="Porfavor ingrese Contraseña" ControlToValidate="txtPassword"></asp:RequiredFieldValidator>
+            <asp:TextBox ID="txtPassword" runat="server" placeholder="Contraseña"></asp:TextBox>
+            <%-- <asp:RequiredFieldValidator CssClass="error-validar" ID="validadorPassword"  runat="server" ErrorMessage="Porfavor ingrese Contraseña" ControlToValidate="txtPassword"></asp:RequiredFieldValidator> --%>
 
             <asp:TextBox ID="txtCorreo" runat="server" placeholder="Correo"></asp:TextBox>
-            <asp:RequiredFieldValidator CssClass="error-validar" ID="validadorCorreo" runat="server" ErrorMessage="Porfavor ingrese Correo" ControlToValidate="txtCorreo"></asp:RequiredFieldValidator>
+            <%-- <asp:RequiredFieldValidator CssClass="error-validar" ID="validadorCorreo" runat="server" ErrorMessage="Porfavor ingrese Correo" ControlToValidate="txtCorreo"></asp:RequiredFieldValidator> --%>
 
             <asp:TextBox ID="txtFono" runat="server" placeholder="Teléfono"></asp:TextBox>
-            <asp:RequiredFieldValidator CssClass="error-validar" ID="validadorFono" runat="server" ErrorMessage="Porfavor ingrese Teléfono" ControlToValidate="txtFono"></asp:RequiredFieldValidator>
+            <%-- <asp:RequiredFieldValidator CssClass="error-validar" ID="validadorFono" runat="server" ErrorMessage="Porfavor ingrese Teléfono" ControlToValidate="txtFono"></asp:RequiredFieldValidator> --%>
 
-            <asp:Button ID="btnVendedores" runat="server" Text="Ingresar" OnClick="btnVendedores_Click"/>
+            <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" OnClick="btnIngresar_Click"/>
+            <asp:Button CssClass="consultar" ID="btnConsultar" runat="server" Text="Consultar por ID" OnClick="btnConsultar_Click"/>
+            <asp:Button CssClass="actualizar" ID="btnActualizar" runat="server" Text="Actualizar por ID" OnClick="btnActualizar_Click"/>
+            <asp:Button CssClass="eliminar" ID="btnEliminar" runat="server" Text="Eliminar por ID" OnClick="btnEliminar_Click"/>
         </div>
     </form>
 </body>
